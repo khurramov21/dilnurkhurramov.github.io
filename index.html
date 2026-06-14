@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dilnur Khurramov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0d0d0d;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Avatar */
+    .avatar-ring {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      margin-bottom: 14px;
+    }
+    .avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      border: 2px solid #0d0d0d;
+    }
+
+    .name {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      letter-spacing: -0.2px;
+    }
+
+    .bio {
+      color: rgba(255,255,255,0.45);
+      font-size: 13px;
+      text-align: center;
+      line-height: 1.6;
+      max-width: 280px;
+      margin-bottom: 36px;
+    }
+
+    /* Links */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 15px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.15s ease, border-color 0.2s;
+    }
+
+    .link-card:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.18);
+      transform: translateY(-2px);
+    }
+
+    .link-card:active {
+      transform: scale(0.98);
+    }
+
+    .icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .tg-icon { background: rgba(41, 182, 246, 0.15); }
+    .yt-icon { background: rgba(255, 70, 70, 0.15); }
+    .li-icon { background: rgba(10, 122, 255, 0.15); }
+
+    .link-info { flex: 1; }
+
+    .link-title {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    .link-url {
+      color: rgba(255,255,255,0.38);
+      font-size: 12px;
+    }
+
+    .arrow {
+      color: rgba(255,255,255,0.2);
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .footer {
+      margin-top: 48px;
+      color: rgba(255,255,255,0.15);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="avatar-ring">
+      <div class="avatar-inner">🎯</div>
+    </div>
+
+    <h1 class="name">Dilnur Khurramov</h1>
+    <p class="bio">Личный блог · Hasbunallohu va ni'mal vakil 🫀</p>
+
+    <div class="links">
+
+      <!-- Telegram -->
+      <a class="link-card" href="https://t.me/Khurramovs_blog" target="_blank" rel="noopener">
+        <div class="icon tg-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 6.79l-1.68 7.92c-.12.56-.45.7-.9.43l-2.5-1.84-1.2 1.16c-.13.13-.25.25-.5.25l.18-2.53 4.6-4.16c.2-.18-.04-.28-.31-.1L7.6 14.17 5.15 13.4c-.55-.17-.56-.55.12-.82l8.64-3.33c.46-.17.86.11.72.82z" fill="#29B6F6"/>
+          </svg>
+        </div>
+        <div class="link-info">
+          <div class="link-title">Telegram</div>
+          <div class="link-url">t.me/Khurramovs_blog</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <!-- YouTube -->
+      <a class="link-card" href="https://youtube.com/@dilnur_khurramov" target="_blank" rel="noopener">
+        <div class="icon yt-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.58 7.19a2.7 2.7 0 0 0-1.9-1.91C18.05 5 12 5 12 5s-6.05 0-7.68.28a2.7 2.7 0 0 0-1.9 1.91C2.14 8.82 2.14 12 2.14 12s0 3.18.28 4.81a2.7 2.7 0 0 0 1.9 1.91C5.95 19 12 19 12 19s6.05 0 7.68-.28a2.7 2.7 0 0 0 1.9-1.91C21.86 15.18 21.86 12 21.86 12s0-3.18-.28-4.81zM10 15V9l5.2 3-5.2 3z" fill="#FF4646"/>
+          </svg>
+        </div>
+        <div class="link-info">
+          <div class="link-title">YouTube</div>
+          <div class="link-url">youtube.com/@dilnur_khurramov</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a class="link-card" href="https://linkedin.com/in/dilnurkhurramov" target="_blank" rel="noopener">
+        <div class="icon li-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" fill="#0A7AFF"/>
+          </svg>
+        </div>
+        <div class="link-info">
+          <div class="link-title">LinkedIn</div>
+          <div class="link-url">linkedin.com/in/dilnurkhurramov</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+    </div>
+
+    <p class="footer">@khurramov_21</p>
+
+  </div>
+</body>
+</html>
